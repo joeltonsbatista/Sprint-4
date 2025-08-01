@@ -7,6 +7,8 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    outline: 1px solid red;
 }
 
 .fotoReduzida{
@@ -42,11 +44,14 @@
 .principal{
     display:flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     margin: auto;
+    width: 100%;
+    height: 85vh;
     /* width:500px; */
     gap:15px;
+    
 }
 .principal__fotoRanger{
     width:85%;
@@ -80,11 +85,29 @@ align-items: center;
 
 /* -----------------------Página 2--------------------------- */
 
-.video{
+
+
+.pagina2VideoCarros{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 300px;
+
+}
+
+.pagina2VideoCarros__video{
     color: var(--cor-secundaria);    
     font-family:Arial, sans-serif;
     font-size: 200px;
     font-weight: bold;
 
+
+}
+
+.pagina2VideoCarros__carros{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    gap: 450px;
 
 }
